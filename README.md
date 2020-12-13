@@ -1,5 +1,7 @@
 # Pacman
 
+![Capture d'écran du jeu](res/pac-man.png)
+
 ## Auteur
 [David Brousseau](mailto:dbrsseau@gmail.com)
 
