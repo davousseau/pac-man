@@ -45,8 +45,6 @@ Clear:
     JSR PPUInit ; Initialize PPU
 
 ; Load color palettes into memory
-; FIXME: LoadPalettes tag is not used
-LoadPalettes:
     LDA $2002
     LDA #$3F
     STA $2006
@@ -63,8 +61,6 @@ LoadPalettesLoop:
     BNE LoadPalettesLoop ; Repeat if y is smaller than 32
 
 ; Load sprites into memory
-; FIXME: LoadSprites tag is not used
-LoadSprites:
     LDY #$00
 
 ; Sprites loading loop
@@ -115,8 +111,6 @@ NMI:
 ;    .include "controller2.inc"
 
 ; End of NMI
-; FIXME: End tag is not used
-End:
     LDA #02
     STA $4014
     RTI
@@ -134,8 +128,6 @@ PPUInit:
     RTS ; Return to the parent execution
 
 ; Disable PPU scroll
-; FIXME: CancelScroll tag is not used
-CancelScroll:
     LDA $2002
     LDA #$00
     STA $2000
