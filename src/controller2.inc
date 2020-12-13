@@ -69,6 +69,7 @@ rightPad2:
     CMP #1
     BNE endReadController2
     JSR setRightDirection
+
 endReadController2:
     JMP endController2
 
@@ -78,33 +79,31 @@ setUpperDirection:
 ; Microsoft upper direction
     LDA inUse
     CMP #1
-    BNE linuxUpper
+    BNE linuxUpperDirection
     LDA #1
     STA microsoftDirection
 
-; Linux upper direction
-linuxUpper:
+linuxUpperDirection:
     LDA inUse
     CMP #2
-    BNE appleUpper
+    BNE appleUpperDirection
     LDA #1
     STA linuxDirection
 
-; Apple upper direction
-appleUpper:
+appleUpperDirection:
     LDA inUse
     CMP #3
-    BNE cetiUpper
+    BNE cetiUpperDirection
     LDA #1
     STA appleDirection
 
-; Ceti upper direction
-cetiUpper:
+cetiUpperDirection:
     LDA inUse
     CMP #4
     BNE endSetUpperDirection
     LDA #1
     STA cetiDirection
+
 endSetUpperDirection:
     RTS
 
@@ -113,33 +112,31 @@ setLowerDirection:
 ; Microsoft lower direction
     LDA inUse
     CMP #1
-    BNE linuxLower
+    BNE linuxLowerDirection
     LDA #2
     STA microsoftDirection
 
-; Linux lower direction
-linuxLower:
+linuxLowerDirection:
     LDA inUse
     CMP #2
-    BNE appleLower
+    BNE appleLowerDirection
     LDA #2
     STA linuxDirection
 
-; Apple lower direction
-appleLower:
+appleLowerDirection:
     LDA inUse
     CMP #3
-    BNE cetiLower
+    BNE cetiLowerDirection
     LDA #2
     STA appleDirection
 
-; Ceti lower direction
-cetiLower:
+cetiLowerDirection:
     LDA inUse
     CMP #4
     BNE endSetLowerDirection
     LDA #2
     STA cetiDirection
+
 endSetLowerDirection:
     RTS
 
@@ -148,33 +145,31 @@ setLeftDirection:
 ; Microsoft left direction
     LDA inUse
     CMP #1
-    BNE linuxLeft
+    BNE linuxLeftDirection
     LDA #3
     STA microsoftDirection
 
-; Linux left direction
-linuxLeft:
+linuxLeftDirection:
     LDA inUse
     CMP #2
-    BNE appleLeft
+    BNE appleLeftDirection
     LDA #3
     STA linuxDirection
 
-; Apple left direction
-appleLeft:
+appleLeftDirection:
     LDA inUse
     CMP #3
-    BNE cetiLeft
+    BNE cetiLeftDirection
     LDA #3
     STA appleDirection
 
-; Ceti left direction
-cetiLeft:
+cetiLeftDirection:
     LDA inUse
     CMP #4
     BNE endSetLeftDirection
     LDA #3
     STA cetiDirection
+
 endSetLeftDirection:
     RTS
 
@@ -183,33 +178,31 @@ setRightDirection:
 ; Microsoft right direction
     LDA inUse
     CMP #1
-    BNE linuxRight
+    BNE linuxRightDirection
     LDA #4
     STA microsoftDirection
 
-; Linux right direction
-linuxRight:
+linuxRightDirection:
     LDA inUse
     CMP #2
-    BNE appleRight
+    BNE appleRightDirection
     LDA #4
     STA linuxDirection
 
-; Apple right direction
-appleRight:
+appleRightDirection:
     LDA inUse
     CMP #3
-    BNE cetiRight
+    BNE cetiRightDirection
     LDA #4
     STA appleDirection
 
-; Ceti right direction
-cetiRight:
+cetiRightDirection:
     LDA inUse
     CMP #4
     BNE endSetRightDirection
     LDA #4
     STA cetiDirection
+
 endSetRightDirection:
     RTS
 
