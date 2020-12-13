@@ -8,7 +8,7 @@
     .inesmap 0 ; No banks exchange
     .inesmir 1 ; Background mirror
 
-; Main initialization
+; Bank initialization
     .bank 0
     .org $C000 ; Writing starts at $C000
     .code ; Start of the game
@@ -156,10 +156,10 @@ VBlank:
 
 ; Color palettes
 Palettes:
-;   Background, Color 1, Color 2, Color 3...
-    .db $FE,$26,$16,$21, $FE,$05,$15,$25, $FE,$29,$16,$28, $FE,$0A,$1A,$2A ; Scene
-;   Transparency, Color 1, Color 2, Color 3...
-    .db $FE,$16,$29,$FE, $FE,$0D,$28,$30, $FE,$00,$10,$FE, $FE,$00,$11,$30 ; Sprite
+;   Background
+    .db $FE,$26,$2B,$25, $FE,$05,$15,$25, $FE,$29,$16,$28, $FE,$0A,$1A,$2A
+;   Sprites
+    .db $FE,$16,$29,$FE, $FE,$0D,$28,$30, $FE,$00,$10,$FE, $FE,$00,$11,$30
 
 ; Sprites initial attributes and position
 Sprites:
@@ -191,19 +191,18 @@ Sprites:
     .db $C0, $11, %00000011, $C8
 
 ; Interruptions
-    .org $FFFA; Writing starts at $FFFA
-    .dw NMI			; Start the NMI
-    .dw Reset		; Reset at launch
-    .dw 0			; If BRK occurs, do nothing
+    .org $FFFA ; Writing starts at $FFFA
+    .dw NMI ; Start the NMI
+    .dw Reset ; Reset at launch
+    .dw 0 ; If BRK occurs, do nothing
 
 ; Include all required routines
-;   TODO:
-;    .include "background.inc"
-;    .include "sprites.inc"
+    .include "background.inc"
+    .include "sprites.inc"
 
 ; Zero Page
     .zp
-    .org $0000; Writing starts at $0000
+    .org $0000 ; Writing starts at $0000
 
 ; Constants & Variables
 ; NMI counter
@@ -222,18 +221,18 @@ direction:
 inUse:
     .ds 1
 
-; Microsoft initial direction (up = 1; down = 2, left = 3, right = 4)
+; Microsoft initial direction
 microsoftDirection:
     .ds 1
 
-; Linux initial direction (up = 1; down = 2, left = 3, right = 4)
+; Linux initial direction
 linuxDirection:
     .ds 1
 
-; Apple initial direction (up = 1; down = 2, left = 3, right = 4)
+; Apple initial direction
 appleDirection:
     .ds 1
 
-; Céti initial direction (up = 1; down = 2, left = 3, right = 4)
+; Céti initial direction
 cetiDirection:
     .ds 1
