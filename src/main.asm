@@ -101,14 +101,13 @@ NMI:
     STA counter
 
 ; Include all required routines
-;   TODO:
-;    .include "pacman.inc"
-;    .include "microsoft.inc"
-;    .include "linux.inc"
-;    .include "apple.inc"
-;    .include "ceti.inc"
-;    .include "controller1.inc"
-;    .include "controller2.inc"
+    .include "pacman.inc"
+    .include "microsoft.inc"
+    .include "linux.inc"
+    .include "apple.inc"
+    .include "ceti.inc"
+    .include "controller1.inc"
+    .include "controller2.inc"
 
 ; End of NMI
     LDA #02
@@ -213,18 +212,14 @@ direction:
 inUse:
     .ds 1
 
-; Microsoft initial direction
 microsoftDirection:
     .ds 1
 
-; Linux initial direction
 linuxDirection:
     .ds 1
 
-; Apple initial direction
 appleDirection:
     .ds 1
 
-; Céti initial direction
 cetiDirection:
     .ds 1
