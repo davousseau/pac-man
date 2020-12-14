@@ -5,13 +5,13 @@
 ## Auteur
 [David Brousseau](mailto:dbrsseau@gmail.com)
 
-## Contexte
-Projet effectué dans le cadre du cours **420-SE2-DM Système d'exploitation II**, remis à l'enseignant **Louis Marchand** au [Cégep de Drummondville](https://www.cegepdrummond.ca/) le 19 décembre 2014. Ce projet a été retranscris en 2020 pour le rendre public et l'insérer dans mon porte-folio.
+## Contexte académique
+Projet effectué dans le cadre du cours **420-SE2-DM Système d'exploitation II**, remis à l'enseignant **Louis Marchand** au [Cégep de Drummondville](https://www.cegepdrummond.ca/) le 19 décembre 2014. Ce projet a été retranscris en décembre 2020 pour le rendre public et l'insérer dans mon porte-folio.
 
 ## Description
 Conception partielle du jeu [Pac-Man](https://fr.wikipedia.org/wiki/Pac-Man) sur la première console de salon [Nintendo Entertainment System](https://fr.wikipedia.org/wiki/Nintendo_Entertainment_System). À noter qu'il n'y a aucune détection des collisions.
 
-## Prérequis
+## Environnement suggéré
 - [NESASM](http://www.magicengine.com/mkit/), assembleur NES 6502 pour compiler le code.
 - [VS Code](), éditeur de texte pour modifier le code.
 - [Retro Assembler](https://marketplace.visualstudio.com/items?itemName=EngineDesigns.retroassembler), extension du langage d'assemblage à l'utilisation de VS Code.
@@ -20,9 +20,9 @@ Conception partielle du jeu [Pac-Man](https://fr.wikipedia.org/wiki/Pac-Man) sur
 ## Compatibilité
 Testé sous un environnement **linux** et **windows** avec l'émulateur **FCEUX seulement**.
 
-## Lancer le jeu
+## Comment lancer le jeu ?
 ```
-fceux bin/pac-man.nes
+fceux bin/Pac-Man.nes
 ```
 
 ## Fonctionnement
