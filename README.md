@@ -18,7 +18,7 @@ Reproduction partielle du jeu [Pac-Man](https://fr.wikipedia.org/wiki/Pac-Man) s
 - [FCEUX](http://fceux.com/web/download.html), émulateur NES pour lancer le jeu.
 
 ## Compatibilité
-Testé sous un environnement **linux** et **windows** avec l'émulateur **FCEUX seulement**.
+Testé sous des environnements **Linux** et **Windows** avec l'émulateur **FCEUX seulement**.
 
 ## Comment lancer le jeu ?
 ```
