@@ -13,7 +13,8 @@ Reproduction partielle du jeu [Pac-Man](https://fr.wikipedia.org/wiki/Pac-Man) s
 ## Environnement suggéré
 - [NESASM](http://www.magicengine.com/mkit/), assembleur NES 6502 pour compiler le code.
 - [VS Code](https://code.visualstudio.com/), éditeur de texte pour modifier le code.
-- [Retro Assembler](https://marketplace.visualstudio.com/items?itemName=EngineDesigns.retroassembler), extension du langage d'assemblage réservé à l'utilisation de VS Code.
+- [Retro Assembler](https://marketplace.visualstudio.com/items?itemName=EngineDesigns.retroassembler), extension du langage d'assembleur réservé à l'usage de VS Code.
+- [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight), extension d'affichage des TODOs réservé à l'usage de VS Code.
 - [FCEUX](http://fceux.com/web/download.html), émulateur NES pour lancer le jeu.
 
 ## Compatibilité
