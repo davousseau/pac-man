@@ -10,33 +10,40 @@ Projet effectué dans le cadre du cours **420-SE2-DM Système d'exploitation II*
 ## Description
 Reproduction partielle du jeu [Pac-Man](https://fr.wikipedia.org/wiki/Pac-Man) sur la première console de salon [Nintendo Entertainment System](https://fr.wikipedia.org/wiki/Nintendo_Entertainment_System). À noter qu'il n'y a aucune détection des collisions.
 
-## Environnement suggéré
-- [NESASM](http://www.magicengine.com/mkit/), assembleur NES 6502 pour compiler le code.
-- [VS Code](https://code.visualstudio.com/), éditeur de texte pour modifier le code.
-- [Retro Assembler](https://marketplace.visualstudio.com/items?itemName=EngineDesigns.retroassembler), extension du langage d'assembleur réservé à l'usage de VS Code.
-- [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight), extension d'affichage des TODOs réservé à l'usage de VS Code.
-- [FCEUX](http://fceux.com/web/download.html), émulateur NES pour lancer le jeu.
-
 ## Compatibilité
 Testé sous des environnements **Linux** et **Windows** avec l'émulateur **FCEUX seulement**.
 
-## Comment lancer le jeu ?
+## Dépendances
+- [NESASM](http://www.magicengine.com/mkit/), assembleur NES 6502 pour compiler le code.
+- [FCEUX <sup>*</sup>](http://fceux.com/web/download.html), émulateur NES pour lancer le jeu.
+
+_<sup>*</sup> Dépendance optionnelle selon votre utilisation._
+
+## Environnement suggéré
+- [VS Code](https://code.visualstudio.com/), éditeur de texte pour modifier le code.
+    - [Retro Assembler](https://marketplace.visualstudio.com/items?itemName=EngineDesigns.retroassembler), extension pour le langage d'assembleur.
+    - [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight), extension pour afficher les TODOs.
+
+## Fonctionnement
 ```
 fceux bin/Pac-Man.nes
 ```
 
-## Fonctionnement
-### Joueur 1
-Utilisez le `pad directionnel` de votre manette pour déplacer Pac-Man.
+Joueur 1 :
+> Utilisez le `pad directionnel` de votre manette pour déplacer Pac-Man.
 
-### Joueur 2
-#### Permutation entre les logos
-`Bouton A` &rarr; Microsoft<br>
-`Bouton B` &rarr; Linux<br>
-`Select` &rarr; Apple<br>
-`Start` &rarr; Céti
+Joueur 2 :
+> Utilisez les boutons suivants pour permuter entre les logos.<br>
+> `Bouton A` &rarr; Microsoft<br>
+> `Bouton B` &rarr; Linux<br>
+> `Select` &rarr; Apple<br>
+> `Start` &rarr; Céti
+>
+> Utilisez le `pad directionnel` de votre manette pour déplacer le logo sélectionné.
 
-Utilisez le `pad directionnel` de votre manette pour déplacer le logo sélectionné.
+## Documentations
+- [6502.org](http://6502.org/tutorials/)
+- [6502 Assembly](https://en.wikibooks.org/wiki/6502_Assembly)
 
 ## Références
 - [6502 ASM, first app](https://taywee.github.io/NerdyNights/nerdynights/asmfirstapp.html)
