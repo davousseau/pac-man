@@ -41,11 +41,9 @@ Joueur 2 :
 >
 > Utilisez le `pad directionnel` de votre manette pour déplacer le logo sélectionné.
 
-## Documentations
+## Références
 - [6502.org](http://6502.org/tutorials/)
 - [6502 Assembly](https://en.wikibooks.org/wiki/6502_Assembly)
-
-## Références
 - [6502 ASM, first app](https://taywee.github.io/NerdyNights/nerdynights/asmfirstapp.html)
 - [NES ASM Tutorial](https://patater.com/gbaguy/nesasm.htm)
 - [NES Basics and Our First Game](http://thevirtualmountain.com/nes/2017/03/08/nes-basics-and-our-first-game.html)
