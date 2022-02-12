@@ -2,7 +2,7 @@
 ![Capture d'écran du jeu](res/pac-man.png)
 
 ## Auteur
-[David Brousseau](mailto:dbrsseau@gmail.com)
+[David Brousseau](mailto:davousseau@gmail.com)
 
 ## Contexte académique
 Projet effectué dans le cadre du cours **420-SE2-DM Système d'exploitation II**, remis à l'enseignant **Louis Marchand** au [Cégep de Drummondville](https://www.cegepdrummond.ca/) le 19 décembre 2014. Ce projet a été retranscris en décembre 2020 pour le rendre public et l'insérer dans mon porte-folio.
